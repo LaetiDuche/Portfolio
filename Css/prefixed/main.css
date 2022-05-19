@@ -1,0 +1,14 @@
+*, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "verdana";
+}
+
+/* Typo titre principal */
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Nhc3MvQmFzZS9fcmVzZXQuc2FzcyIsIi4uL3N0eWxlLmNzcyIsIi4uLy4uL3Nhc3MvQmFzZS9fdHlwb2dyYXBoeS5zYXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksU0FBQTtFQUNBLFVBQUE7RUFDQSw4QkFBQTtVQUFBLHNCQUFBO0FDQ0o7O0FDSkE7RUFDRSxzQkFBQTtBRE9GOztBQ0xBLHlCQUFBIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

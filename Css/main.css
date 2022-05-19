@@ -1,0 +1,98 @@
+*, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+body {
+  font-family: 'verdana'; }
+
+/* Typo titre principal */
+/* Menu mobile */
+@media screen and (max-width: 425px) {
+  .nav-check, .nav-large {
+    display: none; }
+  .btn-menu {
+    background-color: #37373f;
+    height: 4rem;
+    width: 4rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+    z-index: 2000;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: #f845c5 0px 0px 4px 0px, #f845c5 0px 0px 1px 0px; }
+  .bi-caret-left-fill {
+    color: #f845c5;
+    position: fixed;
+    top: 2.5rem;
+    right: 5rem; }
+  .logo {
+    color: #f845c5;
+    text-shadow: 1px 1px 4px #f845c5;
+    position: relative;
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.5rem; }
+  .nav {
+    width: 10rem;
+    position: fixed;
+    top: 1rem;
+    right: 7rem;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out; }
+  .nav-list {
+    left: 2rem;
+    top: 1rem;
+    text-align: center;
+    background-color: #37373f;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: #f845c5 0px 0px 4px 0px, #f845c5 0px 0px 1px 0px; }
+  .liens {
+    display: inline-block;
+    font-size: 1rem;
+    color: #f845c5;
+    text-shadow: 1px 1px 4px #f845c5;
+    text-transform: uppercase;
+    margin: 0.5rem;
+    padding: 0.5rem; }
+    .liens:hover {
+      color: #fff; }
+  .nav-check:checked ~ .nav {
+    transform: scale(1, 1); } }
+
+/* Menu tablette desktop */
+@media screen and (min-width: 426px) {
+  .nav-logo {
+    display: none; }
+  .nav-large {
+    display: flex;
+    background-color: #37373f;
+    position: sticky; }
+  .logo-large {
+    color: #f845c5;
+    text-shadow: 1px 1px 4px #f845c5;
+    padding: 1rem 1.3rem;
+    font-size: 1.5rem; }
+  .nav2 {
+    margin-left: auto; }
+  .nav-list2 {
+    display: flex;
+    padding: 1.3rem 1rem; }
+  .liens-large {
+    font-size: 1rem;
+    color: #f845c5;
+    text-shadow: 1px 1px 4px #f845c5;
+    text-transform: uppercase;
+    padding: 1rem; }
+    .liens-large:hover {
+      color: #fff; } }

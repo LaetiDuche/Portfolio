@@ -4,8 +4,8 @@
   "description": "Portfolio de mes projets",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.sass:./css/style.css",
-    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+    "sass": "node-sass --watch sass -o css",
+    "prefix": "postcss css/main.css --use autoprefixer -d css/prefixed/"
   },
   "repository": {
     "type": "git",
