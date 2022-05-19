@@ -1,0 +1,56 @@
+/* Menu mobile */
+@media screen and (max-width: 425px)
+  .nav-check, .nav-large
+    display: none
+  .btn-menu
+    background-color: $color-primary
+    height: 4rem
+    width: 4rem
+    position: fixed
+    top: 1rem
+    right: 1rem
+    border-radius: 50%
+    z-index: 2000
+    text-align: center
+    cursor: pointer
+    box-shadow: $color-secondary 0px 0px 4px 0px , $color-secondary 0px 0px 1px 0px
+  .bi-caret-left-fill
+    color: $color-secondary
+    position: fixed
+    top: 2.5rem
+    right: 5rem
+  .logo
+    color: $color-secondary
+    text-shadow: 1px 1px 4px $color-secondary
+    position: relative
+    display: inline-block
+    margin-top: 1rem
+    font-size: 1.5rem
+  .nav
+    width: 10rem
+    position: fixed
+    top: 1rem
+    right: 7rem
+    transform: scale(1, 0)
+    transform-origin: top
+    transition: transform 400ms ease-in-out
+  .nav-list
+    left: 2rem
+    top: 1rem
+    text-align: center
+    background-color: $color-primary
+    border-radius: 20px
+    padding: 1rem
+    box-shadow: $color-secondary 0px 0px 4px 0px , $color-secondary 0px 0px 1px 0px
+  .liens
+    display: inline-block
+    font-size: 1rem
+    color: $color-secondary
+    text-shadow: 1px 1px 4px $color-secondary
+    text-transform: uppercase
+    margin: 0.5rem
+    padding: 0.5rem
+    &:hover
+      color: #fff
+  .nav-check:checked ~ .nav
+    transform: scale(1, 1)
