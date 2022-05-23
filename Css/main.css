@@ -1,3 +1,4 @@
+/* Reset css */
 *, ::after {
   margin: 0;
   padding: 0;
@@ -12,8 +13,8 @@ li {
 body {
   font-family: 'verdana'; }
 
-/* Typo titre principal */
-@keyframes blink {
+/* Animation neon */
+@keyframes blink1 {
   0% {
     opacity: 0; }
   10% {
@@ -233,7 +234,7 @@ body {
     .liens-large:hover {
       color: #f845c5; } }
 
-/* Section HERO */
+/* SECTION HERO */
 #hero {
   background-color: #37373f;
   top: 0;
@@ -276,6 +277,7 @@ body {
   .title-dw .dev {
     margin-right: 1rem; }
 
+/* Animation neon */
 .laeti, .duche {
   animation: blink1 1000ms linear; }
 
@@ -291,3 +293,40 @@ body {
     justify-content: center; }
     .names .laeti {
       margin-right: 2rem; } }
+
+/* SECTION CONTACT */
+#contact {
+  background-color: #87878b;
+  padding-bottom: 2rem; }
+
+h3 {
+  color: #fff;
+  font-family: "Neon Tubes 2";
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.bloc-contact {
+  display: flex; }
+
+.contact, .social {
+  width: 100%; }
+
+p {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: center; }
+
+a {
+  display: flex;
+  justify-content: center; }
+
+.bi-envelope-fill, .bi-linkedin {
+  font-family: "Neon Tubes 2";
+  color: #ffd9e2;
+  text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 300px #f845c5, 0 0 200px #f845c5, 0 0 300px #f845c5, 0 0 500px #f845c5;
+  text-align: center;
+  font-size: 2rem; }
+  .bi-envelope-fill:hover, .bi-linkedin:hover {
+    color: #f845c5; }
