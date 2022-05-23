@@ -1,0 +1,52 @@
+/* Section HERO */
+
+#hero
+  background-color: $color-primary
+  top: 0
+  padding: 3rem
+
+.titles
+  margin-top: 5rem
+  margin-bottom: 3rem
+
+.title-l
+  display: flex
+  padding: 1rem 0
+  .laeti
+    margin: auto
+    @include neon-shadow
+    font-size: 300%
+    letter-spacing: 5px
+  
+.title-d
+  display: flex
+  .duche
+    font-size: 300%
+    margin: auto
+    @include neon-shadow
+
+.title-dw
+  display: flex
+  font-size: 1.2rem
+  margin-top: 3rem
+  justify-content: center
+  .dev, .web
+    @include neon-shadow
+    letter-spacing: 3px
+  .dev
+    margin-right: 1rem
+
+.laeti, .duche
+  animation: blink1 1000ms linear  
+.dev
+  animation: blink2 1500ms linear 
+.web
+  animation: blink3 2700ms linear 
+
+
+@media screen and (min-width: 620px)
+  .names
+    display: flex
+    justify-content: center
+    .laeti
+      margin-right: 2rem
