@@ -5,10 +5,11 @@
   .nav-large
     display: flex
     background-color: $color-primary
-    position: sticky
+    position: fixed
+    width: 100%
+    z-index: 1
   .logo-large
-    color: $color-secondary
-    text-shadow: 1px 1px 4px $color-secondary
+    @include neon-shadow
     padding: 1rem 1.3rem
     font-size: 1.5rem
   .nav2
@@ -17,10 +18,9 @@
     display: flex
     padding: 1.3rem 1rem
   .liens-large
+    @include neon-shadow
     font-size: 1rem
-    color: $color-secondary
-    text-shadow: 1px 1px 4px $color-secondary
     text-transform: uppercase
     padding: 1rem
     &:hover
-      color: #fff
+      color: $color-secondary
