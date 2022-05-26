@@ -1,0 +1,57 @@
+/* SECTION A PROPOS */
+
+#apropos
+  background-color: #5e5e65
+  padding-top: 3rem
+  padding-bottom: 3rem
+  /* background-image: url("../images/photo2.png")  */
+ /*  background-size: contain
+  background-repeat: no-repeat
+  margin-bottom: 0
+  background-position: right */
+.title-bio
+  margin-top: 2rem
+.p-bio
+  padding:  2rem
+  text-align: justify
+  color: #fff
+  line-height: 30px
+  font-size: 1.2rem
+
+.img
+  text-align: center
+.img-bio
+  box-shadow: 5px 5px 12px  $color-primary
+  object-fit: cover
+  border-radius: 50%
+  width: 250px
+  height: 250px
+  
+@media screen and (min-width: 426px)
+  #apropos
+    align-items: center 
+  .p-bio
+    margin-left: 3rem
+    margin-right: 3rem
+  .title h3
+    width: 100%
+  
+@media screen and (min-width: 769px)
+  .title-bio 
+    display: flex
+  .p-bio
+    width: 50%
+    margin: 0 0 0 2rem
+    padding-right: 0
+  .img
+    width: 50%
+    margin-top: auto
+    margin-bottom: auto
+
+@media screen and (min-width: 1024px)
+  .title-bio
+    margin-top: 4rem
+  .p-bio
+    margin-left: 5rem
+  .img
+    margin-top: auto
