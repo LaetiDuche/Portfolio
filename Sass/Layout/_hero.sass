@@ -3,7 +3,7 @@
 #hero
   background-color: $color-primary
   top: 0
-  padding: 3rem
+  padding: 5rem 3rem 5rem 3rem
 
 .titles
   margin-top: 5rem
@@ -18,36 +18,35 @@
     font-size: 300%
     letter-spacing: 5px
   
-.title-d
+.title-d, .title-dev, .title-w
   display: flex
   .duche
     font-size: 300%
     margin: auto
     @include neon-shadow
-
+.title-dev
+  margin-right: 1rem
+  margin-left: 1rem
 .title-dw
-  display: flex
-  font-size: 1.2rem
-  margin-top: 3rem
-  justify-content: center
+  font-size: 1.5rem
+  margin-top: 5rem
   .dev, .web
     @include neon-shadow
     letter-spacing: 3px
-  .dev
-    margin-right: 1rem
+    margin: auto
+.title-dev
+  padding: 1rem 0
 
 /* Animation neon */
 .laeti, .duche
   animation: blink1 1000ms linear  
 .dev
-  animation: blink2 1500ms linear 
+  animation: blink1 1500ms linear 
 .web
-  animation: blink3 2700ms linear 
+  animation: blink2 2700ms linear 
 
 
 @media screen and (min-width: 620px)
-  .names
+  .title-dw
     display: flex
     justify-content: center
-    .laeti
-      margin-right: 2rem
