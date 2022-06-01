@@ -1,32 +1,36 @@
 /* SECTION A PROPOS */
 
 #apropos
-  background-color: #5e5e65
+  background-color: #ebebeb
   padding-top: 3rem
   padding-bottom: 3rem
-  /* background-image: url("../images/photo2.png")  */
- /*  background-size: contain
-  background-repeat: no-repeat
-  margin-bottom: 0
-  background-position: right */
+
+/* TEXTE */
+
 .title-bio
   margin-top: 2rem
 .p-bio
   padding:  2rem
   text-align: justify
-  color: #fff
+  color: #000
   line-height: 30px
   font-size: 1.2rem
 
+
+/* PORTRAIT */
+  
 .img
   text-align: center
 .img-bio
-  box-shadow: 5px 5px 12px  $color-primary
+  @include box-shadow
   object-fit: cover
   border-radius: 50%
   width: 250px
   height: 250px
   
+
+/* RESPONSIVE tablette / desktop */
+
 @media screen and (min-width: 426px)
   #apropos
     align-items: center 
