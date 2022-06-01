@@ -1,6 +1,184 @@
 /* SECTION PROJETS */
 
 #projets
-  background-color: #4b4b52
+  background-color: #d7d7d8
+
+.p-projet
+  display: flex
+  padding: 1rem 
+  justify-content: center
+  color: #000
+  line-height: 30px
+  font-size: 1.2rem
+  p
+    flex-basis: 90%
+    text-align: justify
+
+  
+/* CAROUSEL */
+
+.carousel
+  display: grid
+  grid-auto-flow: column
+  overflow-x: auto
+  grid-auto-columns: 100%
+  padding: 2rem 1rem 2rem 1rem
+  margin: 2rem 1rem 2rem 1rem 
+  background-color: #fff
+  border-radius: 0.5rem
+  @include box-shadow
+
+.element-projet
+  display: flex
+  border-radius: 0.5rem
+  margin: 1rem 0.5rem 2rem 0.5rem
+  @include box-shadow
+  width: 90%
+  
+.container
+  display: flex
+  
+.overlay
+  display: none
+
+.btn
+  text-decoration: none
+  color: #000
+  &:hover
+    overlay: #fff
+  .titre-projet
+    text-align: center
+    padding: 0.2rem
+    background: #fff
+    border-radius: 0 0 0.5rem 0.5rem
+    p
+      padding-bottom: 0.5rem
+  img
+    width: 100%
+    /* object-fit: cover */
+    border-radius: 0.5rem 0.5rem 0 0
+    
+    
+/* POP-UP MODAL */
+
+/* Fenetre */
+.modal-window
+  display: flex
+  top: -20%
+  right: 0
+  left: 0
+  bottom: -20%
+  visibility: hidden
+  opacity: 0
+  pointer-events: none
+  transition: all 0.3s
+  border-radius: 1rem
+  
+.modal-window:target
+  visibility: visible
+  opacity: 1
+  pointer-events: auto
+
+.modal-window > div
+  position: absolute
+  border-radius: 1rem
+  top: 70%
+  left: 10%
+  right: 10%
+  background: #f2f2f2
+  @include box-shadow
+
+.modal-window h3 
+  font-size: 2em
+  margin: 1rem 0 1rem 0
+
+.close
+  margin-top: 1rem
+  margin-left: 1rem
+  position: absolute
+  font-size: 2rem
+  .bi-x-lg
+    color: $color-secondary
+    &:hover
+      color: #000
+
+/* Texte */
+.text-pop
+  display: inline-block
+  background: #fff
+  padding: 3rem 2rem 2rem 2rem
+  border-radius: 1rem 1rem 0 0
+  h4
+    text-align: center
+    color: $color-secondary
+    font-family: "Neon Tubes 2"
+    font-size: 1.2rem
+    margin: 1rem 0 0 0
+    line-height: 2rem
+  .p-pop
+    display: flex
+    p
+      text-align: justify
+      padding-top: 5% 
+      padding-bottom: 5%
+      
+.tech-pop
+  margin-top: 1rem
+.logo-tech
+  display: flex
+  margin-top: 2rem
+  justify-content: space-evenly
+.logo-tech img
+  width: 50px
+figure
+  margin-top: auto
+figcaption
+  text-align: center
+  
+/* Demo-Video */
+.video-pop
+  display: flex
+  justify-content: center
+  padding: 2rem
+  background: #ebebeb
+  border-radius: 0 0 1rem 1rem 
+  video
+    margin-top: auto 
+    margin-bottom: auto
+    width: 250px
+    border-radius: 1rem
+    border: 5px solid #fff
+    @include box-shadow
+
+/* RESPONSIVE tablette / desktop */
+
+@media screen and (min-width: 426px) 
+  .carousel
+    grid-auto-columns: 60%
+    margin: 2rem 
+  .modal-window
+    top: -20%
+    right: -30%
+    left: -30%
+    bottom: -20%
+
+@media screen and (min-width: 769px)
+  .carousel
+    grid-auto-columns: 40%
+    margin: 2rem 4rem 2rem 4rem
+    padding: 3rem 1rem 3rem 1rem
+  .p-projet
+    padding: 4rem
+  .modal-window > div
+    display: flex
+  .text-pop
+    border-radius: 1rem 0 0 1rem
+  .video-pop
+    border-radius: 0 1rem 1rem 0
+    
+@media screen and (min-width: 1026px)
+  .video-pop 
+    padding-right: 5rem
+    padding-left: 5rem
 
   

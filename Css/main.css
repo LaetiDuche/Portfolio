@@ -181,7 +181,7 @@ body {
     display: none; }
   .nav-large {
     display: flex;
-    background-color: rgba(55, 55, 63, 0.9);
+    background-color: #37373f;
     position: fixed;
     width: 100%;
     z-index: 1; }
@@ -281,7 +281,6 @@ footer {
   width: 100%; }
 
 .p-contact {
-  font-size: 1rem;
   color: #fff;
   margin-bottom: 2rem;
   text-align: center; }
@@ -301,35 +300,33 @@ footer {
 
 /* SECTION A PROPOS */
 #apropos {
-  background-color: #5e5e65;
+  background-color: #ebebeb;
   padding-top: 3rem;
-  padding-bottom: 3rem;
-  /* background-image: url("../images/photo2.png")  */ }
+  padding-bottom: 3rem; }
 
-/*  background-size: contain
-  background-repeat: no-repeat
-  margin-bottom: 0
-  background-position: right */
+/* TEXTE */
 .title-bio {
   margin-top: 2rem; }
 
 .p-bio {
   padding: 2rem;
   text-align: justify;
-  color: #fff;
+  color: #000;
   line-height: 30px;
   font-size: 1.2rem; }
 
+/* PORTRAIT */
 .img {
   text-align: center; }
 
 .img-bio {
-  box-shadow: 5px 5px 12px #37373f;
+  box-shadow: 5px 5px 20px  #9b9b9f;
   object-fit: cover;
   border-radius: 50%;
   width: 250px;
   height: 250px; }
 
+/* RESPONSIVE tablette / desktop */
 @media screen and (min-width: 426px) {
   #apropos {
     align-items: center; }
@@ -361,7 +358,184 @@ footer {
 
 /* SECTION PROJETS */
 #projets {
-  background-color: #4b4b52; }
+  background-color: #d7d7d8; }
+
+.p-projet {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  color: #000;
+  line-height: 30px;
+  font-size: 1.2rem; }
+  .p-projet p {
+    flex-basis: 90%;
+    text-align: justify; }
+
+/* CAROUSEL */
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  grid-auto-columns: 100%;
+  padding: 2rem 1rem 2rem 1rem;
+  margin: 2rem 1rem 2rem 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 20px  #9b9b9f; }
+
+.element-projet {
+  display: flex;
+  border-radius: 0.5rem;
+  margin: 1rem 0.5rem 2rem 0.5rem;
+  box-shadow: 5px 5px 20px  #9b9b9f;
+  width: 90%; }
+
+.container {
+  display: flex; }
+
+.overlay {
+  display: none; }
+
+.btn {
+  text-decoration: none;
+  color: #000; }
+  .btn:hover {
+    overlay: #fff; }
+  .btn .titre-projet {
+    text-align: center;
+    padding: 0.2rem;
+    background: #fff;
+    border-radius: 0 0 0.5rem 0.5rem; }
+    .btn .titre-projet p {
+      padding-bottom: 0.5rem; }
+  .btn img {
+    width: 100%;
+    /* object-fit: cover */
+    border-radius: 0.5rem 0.5rem 0 0; }
+
+/* POP-UP MODAL */
+/* Fenetre */
+.modal-window {
+  display: flex;
+  top: -20%;
+  right: 0;
+  left: 0;
+  bottom: -20%;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  border-radius: 1rem; }
+
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto; }
+
+.modal-window > div {
+  position: absolute;
+  border-radius: 1rem;
+  top: 70%;
+  left: 10%;
+  right: 10%;
+  background: #f2f2f2;
+  box-shadow: 5px 5px 20px  #9b9b9f; }
+
+.modal-window h3 {
+  font-size: 2em;
+  margin: 1rem 0 1rem 0; }
+
+.close {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  position: absolute;
+  font-size: 2rem; }
+  .close .bi-x-lg {
+    color: #f845c5; }
+    .close .bi-x-lg:hover {
+      color: #000; }
+
+/* Texte */
+.text-pop {
+  display: inline-block;
+  background: #fff;
+  padding: 3rem 2rem 2rem 2rem;
+  border-radius: 1rem 1rem 0 0; }
+  .text-pop h4 {
+    text-align: center;
+    color: #f845c5;
+    font-family: "Neon Tubes 2";
+    font-size: 1.2rem;
+    margin: 1rem 0 0 0;
+    line-height: 2rem; }
+  .text-pop .p-pop {
+    display: flex; }
+    .text-pop .p-pop p {
+      text-align: justify;
+      padding-top: 5%;
+      padding-bottom: 5%; }
+
+.tech-pop {
+  margin-top: 1rem; }
+
+.logo-tech {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-evenly; }
+
+.logo-tech img {
+  width: 50px; }
+
+figure {
+  margin-top: auto; }
+
+figcaption {
+  text-align: center; }
+
+/* Demo-Video */
+.video-pop {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background: #ebebeb;
+  border-radius: 0 0 1rem 1rem; }
+  .video-pop video {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 250px;
+    border-radius: 1rem;
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 20px  #9b9b9f; }
+
+/* RESPONSIVE tablette / desktop */
+@media screen and (min-width: 426px) {
+  .carousel {
+    grid-auto-columns: 60%;
+    margin: 2rem; }
+  .modal-window {
+    top: -20%;
+    right: -30%;
+    left: -30%;
+    bottom: -20%; } }
+
+@media screen and (min-width: 769px) {
+  .carousel {
+    grid-auto-columns: 40%;
+    margin: 2rem 4rem 2rem 4rem;
+    padding: 3rem 1rem 3rem 1rem; }
+  .p-projet {
+    padding: 4rem; }
+  .modal-window > div {
+    display: flex; }
+  .text-pop {
+    border-radius: 1rem 0 0 1rem; }
+  .video-pop {
+    border-radius: 0 1rem 1rem 0; } }
+
+@media screen and (min-width: 1026px) {
+  .video-pop {
+    padding-right: 5rem;
+    padding-left: 5rem; } }
 
 /* ONE PAGE */
 section, footer {
@@ -370,9 +544,11 @@ section, footer {
 
 .projets-title, .propos-title, .contact-title {
   font-family: "Neon Tubes 2";
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5; }
+  color: #f845c5;
+  text-align: center; }
+
+p {
+  font-size: 1.2rem; }
 
 @media screen and (min-width: 620px) {
   .names {
