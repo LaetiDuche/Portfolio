@@ -1,14 +1,14 @@
-# Portofolio OnePage
+# Portfolio OnePage
 
 Portfolio de mes projets  
 
 Objectifs :  
-- Présentation
 - Projets
+- A propos
 - Contact
 
 Techniques :  
 - Html, Css, Sass
 
 Démarrage :  
-- 
+- npm run sass

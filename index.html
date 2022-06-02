@@ -7,14 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Laetitia Duchemin developpeur web à Toulon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./Sass/main.css" />
   <link rel="stylesheet" href="./css/NeonTubes2.otf" />
   <link rel="icon" href="./images/favicon.ico">
 
   <title>Laetitia Duchemin</title>
 </head>
 
-<body>
+<body oncontextmenu="return false;">
 
   <!-- Navigation OnePage -->
   <header>
@@ -89,17 +89,18 @@
   </section>
 
   <section id="projets">
+    <div class="bloc-projet">
+      <div class="projets-title">
+        <h3>PROJETS</h3>
+      </div>
 
-    <div class="projets-title">
-      <h3>PROJETS</h3>
-    </div>
-
-    <div class="p-projet">
-      <p>
-        Duis nulla augue, vulputate a tortor a, tincidunt mollis ligula. Aliquam vel odio arcu. Aenean
-        euismod scelerisque suscipit. Ut quam nisi, varius eu nisi ac, rhoncus fringilla lorem. Donec nec neque
-        facilisis, pharetra lectus quis, finibus risus.
-      </p>
+      <div class="p-projet">
+        <p>
+          Duis nulla augue, vulputate a tortor a, tincidunt mollis ligula. Aliquam vel odio arcu. Aenean
+          euismod scelerisque suscipit. Ut quam nisi, varius eu nisi ac, rhoncus fringilla lorem. Donec nec neque
+          facilisis, pharetra lectus quis, finibus risus.
+        </p>
+      </div>
     </div>
 
     <!-- CAROUSEL -->
@@ -110,15 +111,17 @@
       <div class="element-projet">
 
         <div class="container">
-          <div class="modal-btn">
+          <article class="modal-btn">
             <a href="#show-modal1" class="btn">
-              <img src="./images/orinoco-img.png" alt="projet">
-              <div class="titre-projet">
-                <p>OnePage - Portfolio</p>
-                <p>Front-end</p>
-              </div>
+              <figure>
+                <img src="./images/portfolio.png" alt="projet">
+                <figcaption class="titre-projet">
+                  <p>Portfolio</p>
+                  <p>Front-end</p>
+                </figcaption>
+              </figure>
             </a>
-          </div>
+          </article>
         </div>
 
         <div class="overlay">
@@ -132,7 +135,7 @@
             <div class="text-pop">
 
               <!-- Titre - Texte -->
-              <h4>OnePage - Portfolio</h4>
+              <h4>Portfolio</h4>
               <div class="p-pop">
                 <p> Duis nulla augue, vulputate a tortor a, tincidunt mollis ligula. Aliquam vel odio arcu. Aenean
                   euismod scelerisque suscipit. Ut quam nisi, varius eu nisi ac, rhoncus fringilla lorem. Donec nec
@@ -157,15 +160,15 @@
                 <div class="logo-tech">
                   <figure>
                     <img src="./images/html-1.svg" alt="logo html">
-                    <figcaption>HTML</figcaption>
+                    <figcaption>html</figcaption>
                   </figure>
                   <figure>
                     <img src="./images/css-3.svg" alt="logo css">
-                    <figcaption>CSS</figcaption>
+                    <figcaption>css</figcaption>
                   </figure>
                   <figure>
                     <img src="./images/sass-1.svg" alt="logo sass">
-                    <figcaption>SASS</figcaption>
+                    <figcaption>sass</figcaption>
                   </figure>
                 </div>
               </div>
@@ -173,7 +176,7 @@
             </div>
 
             <div class="video-pop">
-              <video src="./images/demo-groupo.mov" controls type="video"></video>
+              <video src="./images/demo-groupo.mov" controls type="video" controlsList="nodownload"></video>
             </div>
           </div>
         </div>
@@ -184,16 +187,18 @@
       <div class="element-projet">
 
         <div class="container">
-          <div class="modal-btn">
+          <article class="modal-btn">
             <a href="#show-modal2" class="btn">
-              <div class="overlay">Voir le projet</div>
-              <img src="./images/orinoco-img.png" alt="projet">
-              <div class="titre-projet">
-                <p>Réseau social</p>
-                <p>Fullstack</p>
-              </div>
+              <figure>
+                <div class="overlay">Voir le projet</div>
+                <img src="./images/groupomania.png" alt="projet">
+                <figcaption class="titre-projet">
+                  <p>Réseau social</p>
+                  <p>Full-stack</p>
+                </figcaption>
+              </figure>
             </a>
-          </div>
+          </article>
         </div>
 
         <!-- POP-UP MODAL -->
@@ -243,8 +248,10 @@
               </div>
 
             </div>
+
+            <!-- Demo video -->
             <div class="video-pop">
-              <video src="./images/demo-groupo.mov" controls type="video"></video>
+              <video src="./images/demo-groupo.mov" controls type="video" controlsList="nodownload"></video>
             </div>
           </div>
         </div>
@@ -255,16 +262,18 @@
       <div class="element-projet">
 
         <div class="container">
-          <div class="modal-btn">
+          <article class="modal-btn">
             <a href="#show-modal3" class="btn">
-              <div class="overlay">Voir le projet</div>
-              <img src="./images/orinoco-img.png" alt="projet">
-              <div class="titre-projet">
-                <p>Appli d'avis gastronomique</p>
-                <p>Back-end</p>
-              </div>
+              <figure>
+                <div class="overlay">Voir le projet</div>
+                <img src="./images/piiquante.png" alt="projet">
+                <figcaption class="titre-projet">
+                  <p>App d'avis gastronomique</p>
+                  <p>Back-end</p>
+                </figcaption>
+              </figure>
             </a>
-          </div>
+          </article>
         </div>
 
         <!-- POP-UP MODAL -->
@@ -272,7 +281,7 @@
           <div>
             <a href="#" class="close" title="close"><i class="bi bi-x-lg"></i></a>
             <div class="text-pop">
-              <h4>Appli d'avis gastronomique - Piiquante</h4>
+              <h4>App d'avis gastronomique</h4>
               <div class="p-pop">
                 <p>
                   Duis nulla augue, vulputate a tortor a, tincidunt mollis ligula. Aliquam vel odio arcu. Aenean
@@ -312,8 +321,10 @@
               </div>
 
             </div>
+
+            <!-- Demo video -->
             <div class="video-pop">
-              <video src="./images/demo-groupo.mov" controls type="video"></video>
+              <video src="./images/demo-groupo.mov" controls type="video" controlsList="nodownload"></video>
             </div>
           </div>
         </div>
@@ -324,16 +335,18 @@
       <div class="element-projet">
 
         <div class="container">
-          <div class="modal-btn">
+          <article class="modal-btn">
             <a href="#show-modal4" class="btn">
-              <div class="overlay">Voir le projet</div>
-              <img src="./images/orinoco-img.png" alt="projet">
-              <div class="titre-projet">
-                <p>E-commerce</p>
-                <p>Front-end</p>
-              </div>
+              <figure>
+                <div class="overlay">Voir le projet</div>
+                <img src="./images/orinoco.png" alt="projet">
+                <figcaption class="titre-projet">
+                  <p>E-commerce</p>
+                  <p>Front-end</p>
+                </figcaption>
+              </figure>
             </a>
-          </div>
+          </article>
         </div>
 
         <!-- POP-UP MODAL -->
@@ -341,7 +354,7 @@
           <div>
             <a href="#" class="close" title="close"><i class="bi bi-x-lg"></i></a>
             <div class="text-pop">
-              <h4>E-commerce - Orinoco</h4>
+              <h4>E-commerce</h4>
               <div class="p-pop">
                 <p>
                   Duis nulla augue, vulputate a tortor a, tincidunt mollis ligula. Aliquam vel odio arcu. Aenean
@@ -381,9 +394,12 @@
               </div>
 
             </div>
+
+            <!-- Demo video -->
             <div class="video-pop">
-              <video src="./images/demo-groupo.mov" controls type="video"></video>
+              <video src="./images/demo-groupo.mov" controls type="video" controlsList="nodownload"></video>
             </div>
+
           </div>
         </div>
 
@@ -393,16 +409,18 @@
       <div class="element-projet">
 
         <div class="container">
-          <div class="modal-btn">
+          <article class="modal-btn">
             <a href="#show-modal5" class="btn">
-              <div class="overlay">Voir le projet</div>
-              <img src="./images/orinoco-img.png" alt="projet">
-              <div class="titre-projet">
-                <p>Amélioration du SEO</p>
-                <p>Front-end</p>
-              </div>
+              <figure>
+                <div class="overlay">Voir le projet</div>
+                <img src="./images/lachouetteagence.png" alt="projet">
+                <figcaption class="titre-projet">
+                  <p>SEO - Accessibilité</p>
+                  <p>Front-end</p>
+                </figcaption>
+              </figure>
             </a>
-          </div>
+          </article>
         </div>
 
         <!-- POP-UP MODAL -->
@@ -410,7 +428,7 @@
           <div>
             <a href="#" class="close" title="close"><i class="bi bi-x-lg"></i></a>
             <div class="text-pop">
-              <h4>SEO - La chouette agence</h4>
+              <h4>SEO - Accessibilité</h4>
               <div class="p-pop">
                 <p>
                   Duis nulla augue, vulputate a tortor a, tincidunt mollis ligula. Aliquam vel odio arcu. Aenean
@@ -450,8 +468,10 @@
               </div>
 
             </div>
+
+            <!-- Demo video -->
             <div class="video-pop">
-              <video src="./images/demo-groupo.mov" controls type="video"></video>
+              <video src="./images/demo-groupo.mov" controls type="video" controlsList="nodownload"></video>
             </div>
           </div>
         </div>
@@ -462,16 +482,18 @@
       <div class="element-projet">
 
         <div class="container">
-          <div class="modal-btn">
+          <article class="modal-btn">
             <a href="#show-modal6" class="btn">
-              <div class="overlay">Voir le projet</div>
-              <img src="./images/orinoco-img.png" alt="projet">
-              <div class="titre-projet">
-                <p>Appli restauration</p>
-                <p>Front-end</p>
-              </div>
+              <figure>
+                <div class="overlay">Voir le projet</div>
+                <img src="./images/ohmyfood.png" alt="projet">
+                <figcaption class="titre-projet">
+                  <p>App de restauration</p>
+                  <p>Front-end</p>
+                </figcaption>
+              </figure>
             </a>
-          </div>
+          </article>
         </div>
 
         <!-- POP-UP MODAL -->
@@ -479,7 +501,7 @@
           <div>
             <a href="#" class="close" title="close"><i class="bi bi-x-lg"></i></a>
             <div class="text-pop">
-              <h4>Appli restauration - Ohmyfood</h4>
+              <h4>App de restauration</h4>
               <div class="p-pop">
                 <p>
                   Duis nulla augue, vulputate a tortor a, tincidunt mollis ligula. Aliquam vel odio arcu. Aenean
@@ -505,22 +527,24 @@
                 <div class="logo-tech">
                   <figure>
                     <img src="./images/html-1.svg" alt="logo html">
-                    <figcaption>HTML</figcaption>
+                    <figcaption>html</figcaption>
                   </figure>
                   <figure>
                     <img src="./images/css-3.svg" alt="logo css">
-                    <figcaption>CSS</figcaption>
+                    <figcaption>css</figcaption>
                   </figure>
                   <figure>
                     <img src="./images/sass-1.svg" alt="logo sass">
-                    <figcaption>SASS</figcaption>
+                    <figcaption>sass</figcaption>
                   </figure>
                 </div>
               </div>
 
             </div>
+
+            <!-- Demo video -->
             <div class="video-pop">
-              <video src="./images/demo-groupo.mov" controls type="video"></video>
+              <video src="./images/demo-groupo.mov" controls type="video" controlsList="nodownload"></video>
             </div>
           </div>
         </div>
@@ -531,16 +555,18 @@
       <div class="element-projet">
 
         <div class="container">
-          <div class="modal-btn">
+          <article class="modal-btn">
             <a href="#show-modal7" class="btn">
-              <div class="overlay">Voir le projet</div>
-              <img src="./images/orinoco-img.png" alt="projet">
-              <div class="titre-projet">
-                <p>Appli réservation</p>
-                <p>Front-end</p>
-              </div>
+              <figure>
+                <div class="overlay">Voir le projet</div>
+                <img src="./images/reservia.png" alt="projet">
+                <figcaption class="titre-projet">
+                  <p>App de réservation</p>
+                  <p>Front-end</p>
+                </figcaption>
+              </figure>
             </a>
-          </div>
+          </article>
         </div>
 
         <!-- POP-UP MODAL -->
@@ -548,7 +574,7 @@
           <div>
             <a href="#" class="close" title="close"><i class="bi bi-x-lg"></i></a>
             <div class="text-pop">
-              <h4>Appli réservation - Réservia</h4>
+              <h4>Appli de réservation</h4>
               <div class="p-pop">
                 <p>
                   Duis nulla augue, vulputate a tortor a, tincidunt mollis ligula. Aliquam vel odio arcu. Aenean
@@ -588,8 +614,10 @@
               </div>
 
             </div>
+
+            <!-- Demo video -->
             <div class="video-pop">
-              <video src="./images/demo-groupo.mov" controls type="video"></video>
+              <video src="./images/demo-groupo.mov" controls type="video" controlsList="nodownload"></video>
             </div>
           </div>
         </div>
@@ -608,7 +636,7 @@
     <div class="title-bio">
 
       <div class="p-bio">
-        <p>Bonjour, <br>Je m'appelle Laetitia, je suis développeur web fullstack ascendant frontend.
+        <p>Bonjour, <br><br>Je m'appelle Laetitia, je suis développeur web fullstack ascendant frontend.
           <br>
           J'ai commencé mon parcours dans le domaine du design d'espace, puis je suis partis à la découverte de
           l'auto-entreprenariat dans

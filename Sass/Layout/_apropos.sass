@@ -1,26 +1,31 @@
 /* SECTION A PROPOS */
 
 #apropos
-  background-color: #ebebeb
+  background-color: #5e5e65
   padding-top: 3rem
   padding-bottom: 3rem
 
 /* TEXTE */
-
+.propos-title
+  @include neon-shadow
+  font-size: 1.5rem
+  text-align: center
 .title-bio
   margin-top: 2rem
 .p-bio
-  padding:  2rem
+  padding: 2rem
   text-align: justify
-  color: #000
+  justify-content: center
+  color: #fff
   line-height: 30px
   font-size: 1.2rem
 
 
 /* PORTRAIT */
-  
+
 .img
   text-align: center
+  margin: 1rem 
 .img-bio
   @include box-shadow
   object-fit: cover
@@ -34,9 +39,6 @@
 @media screen and (min-width: 426px)
   #apropos
     align-items: center 
-  .p-bio
-    margin-left: 3rem
-    margin-right: 3rem
   .title h3
     width: 100%
   
@@ -44,7 +46,7 @@
   .title-bio 
     display: flex
   .p-bio
-    width: 50%
+    width: 70%
     margin: 0 0 0 2rem
     padding-right: 0
   .img
@@ -52,9 +54,7 @@
     margin-top: auto
     margin-bottom: auto
 
-@media screen and (min-width: 1024px)
-  .title-bio
-    margin-top: 4rem
+@media screen and (min-width: 1026px)
   .p-bio
     margin-left: 5rem
   .img

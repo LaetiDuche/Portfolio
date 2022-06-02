@@ -1,17 +1,20 @@
 /* SECTION PROJETS */
 
 #projets
-  background-color: #d7d7d8
+  background-color: #4b4b52
 
+.projets-title
+  @include neon-shadow
+  font-size: 1.5rem
+  text-align: center
 .p-projet
   display: flex
-  padding: 1rem 
+  padding: 2rem 
   justify-content: center
-  color: #000
+  color: #fff
   line-height: 30px
   font-size: 1.2rem
   p
-    flex-basis: 90%
     text-align: justify
 
   
@@ -23,16 +26,18 @@
   overflow-x: auto
   grid-auto-columns: 100%
   padding: 2rem 1rem 2rem 1rem
-  margin: 2rem 1rem 2rem 1rem 
-  background-color: #fff
-  border-radius: 0.5rem
-  @include box-shadow
+  margin: 2rem 0.5rem 2rem 0.5rem 
+  background-color: #d7d7d8
+  box-shadow: 12px 12px 20px #4b4b52
+
+  /* border-radius: 1rem */
+  /* box-shadow: -2px 2px 20px #000 */
 
 .element-projet
   display: flex
-  border-radius: 0.5rem
+  border-radius: 1rem
   margin: 1rem 0.5rem 2rem 0.5rem
-  @include box-shadow
+  box-shadow: 12px 12px 20px #737378
   width: 90%
   
 .container
@@ -48,15 +53,21 @@
     overlay: #fff
   .titre-projet
     text-align: center
-    padding: 0.2rem
     background: #fff
-    border-radius: 0 0 0.5rem 0.5rem
+    padding-top: 0.5rem 
+    border-radius: 0 0 1rem 1rem
     p
       padding-bottom: 0.5rem
-  img
-    width: 100%
-    /* object-fit: cover */
-    border-radius: 0.5rem 0.5rem 0 0
+      color: #000
+
+figure
+  display: flex
+  flex-direction: column
+  
+img
+  width: 100%
+  object-fit: cover
+  border-radius: 1rem 1rem 0 0
     
     
 /* POP-UP MODAL */
@@ -86,7 +97,7 @@
   left: 10%
   right: 10%
   background: #f2f2f2
-  @include box-shadow
+  box-shadow: 5px 5px 20px #5e5e65
 
 .modal-window h3 
   font-size: 2em
@@ -152,10 +163,14 @@ figcaption
 
 /* RESPONSIVE tablette / desktop */
 
-@media screen and (min-width: 426px) 
+@media screen and (min-width: 426px)
+  .bloc-projet
+    display: flex
+  .projets-title
+    margin: auto 
+    width: 150%
   .carousel
     grid-auto-columns: 60%
-    margin: 2rem 
   .modal-window
     top: -20%
     right: -30%
@@ -163,10 +178,10 @@ figcaption
     bottom: -20%
 
 @media screen and (min-width: 769px)
+  #projets
+    padding-top: 0
   .carousel
-    grid-auto-columns: 40%
-    margin: 2rem 4rem 2rem 4rem
-    padding: 3rem 1rem 3rem 1rem
+    grid-auto-columns: 30%
   .p-projet
     padding: 4rem
   .modal-window > div
@@ -176,7 +191,12 @@ figcaption
   .video-pop
     border-radius: 0 1rem 1rem 0
     
-@media screen and (min-width: 1026px)
+@media screen and (min-width: 1025px)
+  .carousel
+    grid-auto-columns: 30%
+  .p-projet
+    margin-left: 2.5rem
+    margin-right: 2.5rem
   .video-pop 
     padding-right: 5rem
     padding-left: 5rem
