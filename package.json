@@ -4,7 +4,7 @@
   "description": "Portfolio de mes projets",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass --watch sass -o css",
+    "sass": "sass --watch sass/main.css:./main.css",
     "prefix": "postcss css/main.css --use autoprefixer -d css/prefixed/"
   },
   "repository": {
