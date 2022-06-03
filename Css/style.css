@@ -419,8 +419,7 @@ footer {
 .btn {
   text-decoration: none;
   color: #000; }
-  .btn:hover {
-    overlay: #fff; }
+  
   .btn .titre-projet {
     text-align: center;
     background: #fff;
