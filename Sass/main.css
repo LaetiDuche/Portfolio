@@ -401,8 +401,6 @@ body {
     display: -ms-flexbox;
     display: flex;
     background-color: #37373f;
-    -webkit-box-shadow: 2px 2px 20px #5e5e65;
-            box-shadow: 2px 2px 20px #5e5e65;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -437,34 +435,28 @@ body {
 }
 
 /* ONE PAGE */
-section, footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.projets-title, .propos-title, .contact-title {
+  font-family: "Neon Tubes 2";
+  color: #ffd9e2;
+  text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
+  text-align: center;
 }
 
 p {
   font-size: 1.2rem;
 }
 
-@media screen and (min-width: 620px) {
-  .names {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .names .laeti {
-    margin-right: 2rem;
-  }
+a:focus {
+  outline-color: #f845c5;
+  border-radius: 1rem;
+  border: 2px;
 }
 
 /* SECTION HERO */
 #hero {
   background-color: #37373f;
   top: 0;
-  padding: 5rem 3rem 5rem 3rem;
+  padding: 5rem 1rem 5rem 1rem;
 }
 
 .titles {
@@ -476,7 +468,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .title-l .laeti {
@@ -488,6 +480,10 @@ p {
   letter-spacing: 5px;
 }
 
+.title-d {
+  padding: auto;
+}
+
 .title-d, .title-dev, .title-w {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -495,6 +491,7 @@ p {
 }
 
 .title-d .duche, .title-dev .duche, .title-w .duche {
+  letter-spacing: 5px;
   font-size: 300%;
   margin: auto;
   font-family: "Neon Tubes 2";
@@ -518,6 +515,7 @@ p {
   text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
   letter-spacing: 3px;
   margin: auto;
+  font-size: 100%;
 }
 
 .title-dev {
@@ -541,6 +539,17 @@ p {
 }
 
 @media screen and (min-width: 620px) {
+  .names {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .names .laeti {
+    margin-right: 2rem;
+  }
   .title-dw {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -554,13 +563,8 @@ p {
 /* SECTION PROJETS */
 #projets {
   background-color: #4b4b52;
-}
-
-.projets-title {
-  font-family: "Neon Tubes 2";
-  color: #ffd9e2;
-  text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
-  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .p-projet {
@@ -592,8 +596,8 @@ p {
   background-color: #d7d7d8;
   -webkit-box-shadow: 12px 12px 20px #4b4b52;
           box-shadow: 12px 12px 20px #4b4b52;
-  /* border-radius: 1rem */
-  /* box-shadow: -2px 2px 20px #000 */
+  -webkit-box-shadow: inset 5px 5px 15px  #4b4b52;
+          box-shadow: inset 5px 5px 15px  #4b4b52;
 }
 
 .element-projet {
@@ -644,7 +648,7 @@ figure {
           flex-direction: column;
 }
 
-img {
+.btn img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -686,6 +690,7 @@ img {
           box-shadow: 5px 5px 20px #5e5e65;
 }
 
+/* Bouton fermer */
 .close {
   margin-top: 1rem;
   margin-left: 1rem;
@@ -722,6 +727,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 1rem;
 }
 
 .text-pop .p-pop p {
@@ -730,30 +736,54 @@ img {
   padding-bottom: 5%;
 }
 
+/* Icons techno */
 .tech-pop {
   margin-top: 1rem;
 }
 
 .logo-tech {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 2rem;
+  display: inline-block;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
 
 .logo-tech img {
-  width: 50px;
+  width: 40px;
+  margin-right: 1rem;
+  margin-top: 1rem;
 }
 
-figure {
-  margin-top: auto;
+/* Bouton lien code */
+.liens-code {
+  margin: 1rem 0 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-figcaption {
-  text-align: center;
+.code {
+  padding: 0.8rem;
+  margin-top: 1rem;
+  border-radius: 1.8rem;
+  color: #fff;
+  font-family: "Neon Tubes 2";
+  font-size: 0.8rem;
+  background-color: #f845c5;
+  -webkit-box-shadow: 5px 5px 10px #737378;
+          box-shadow: 5px 5px 10px #737378;
+}
+
+.code:hover {
+  color: #000;
 }
 
 /* Demo-Video */
@@ -765,7 +795,7 @@ figcaption {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 2rem;
-  background: #ebebeb;
+  background: #d7d7d8;
   border-radius: 0 0 1rem 1rem;
 }
 
@@ -775,11 +805,19 @@ figcaption {
   width: 250px;
   border-radius: 1rem;
   border: 5px solid #fff;
-  -webkit-box-shadow: 5px 5px 20px  #9b9b9f;
-          box-shadow: 5px 5px 20px  #9b9b9f;
+  -webkit-box-shadow: 5px 5px 20px  #737378;
+          box-shadow: 5px 5px 20px  #737378;
 }
 
 /* RESPONSIVE tablette / desktop */
+@media screen and (min-width: 403px) {
+  .liens-code {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: 426px) {
   .bloc-projet {
     display: -webkit-box;
@@ -798,6 +836,11 @@ figcaption {
     right: -30%;
     left: -30%;
     bottom: -20%;
+  }
+  .liens-code {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -840,44 +883,50 @@ figcaption {
 
 /* SECTION A PROPOS */
 #apropos {
-  background-color: #5e5e65;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  background-color: #d7d7d8;
 }
 
 /* TEXTE */
 .propos-title {
-  font-family: "Neon Tubes 2";
-  color: #ffd9e2;
-  text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.title-bio {
-  margin-top: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #5e5e65;
 }
 
 .p-bio {
-  padding: 2rem;
   text-align: justify;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #fff;
+  color: #000;
   line-height: 30px;
-  font-size: 1.2rem;
+}
+
+.propos-p {
+  padding: 2rem;
 }
 
 /* PORTRAIT */
 .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
-  margin: 1rem;
+  padding: 4rem 2rem;
+  background-color: #5e5e65;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: inset 12px 12px 20px #4b4b52;
+          box-shadow: inset 12px 12px 20px #4b4b52;
 }
 
 .img-bio {
-  -webkit-box-shadow: 5px 5px 20px  #9b9b9f;
-          box-shadow: 5px 5px 20px  #9b9b9f;
+  -webkit-box-shadow: 12px 12px 20px #4b4b52;
+          box-shadow: 12px 12px 20px #4b4b52;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
@@ -895,46 +944,36 @@ figcaption {
   .title h3 {
     width: 100%;
   }
+  .propos-p {
+    padding: 4rem;
+  }
 }
 
 @media screen and (min-width: 769px) {
-  .title-bio {
+  .p-bio {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .p-bio {
-    width: 70%;
-    margin: 0 0 0 2rem;
-    padding-right: 0;
+  .propos-p {
+    width: 60%;
   }
   .img {
-    width: 50%;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-}
-
-@media screen and (min-width: 1026px) {
-  .p-bio {
-    margin-left: 5rem;
-  }
-  .img {
-    margin-top: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40%;
   }
 }
 
 /* SECTION CONTACT */
 footer {
   background-color: #37373f;
-}
-
-.contact-title {
-  font-family: "Neon Tubes 2";
-  color: #ffd9e2;
-  text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
-  font-size: 1.5rem;
-  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .bloc-contact {

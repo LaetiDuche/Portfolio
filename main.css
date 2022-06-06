@@ -643,7 +643,6 @@ figcaption {
   font-family: "Neon Tubes 2";
   color: #ffd9e2;
   text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
-  font-size: 1.5rem;
   text-align: center;
 }
 
