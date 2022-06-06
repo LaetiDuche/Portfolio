@@ -1,16 +1,12 @@
 /* ONE PAGE */
 
-section, footer
-  padding-top: 3rem
-  padding-bottom: 3rem
-
+.projets-title, .propos-title, .contact-title
+  @include neon-shadow
+  text-align: center
 p
   font-size: 1.2rem
 
-@media screen and (min-width: 620px)
-  .names
-    display: flex
-    justify-content: center
-    .laeti
-      margin-right: 2rem
- 
+a:focus 
+  outline-color: #f845c5
+  border-radius: 1rem
+  border: 2px

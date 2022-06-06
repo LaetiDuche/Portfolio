@@ -2,10 +2,9 @@
 
 #projets
   background-color: #4b4b52
+  padding-top: 3rem
+  padding-bottom: 3rem
 
-.projets-title
-  @include neon-shadow
-  text-align: center
 .p-projet
   display: flex
   padding: 2rem 
@@ -18,7 +17,6 @@
 
   
 /* CAROUSEL */
-
 .carousel
   display: grid
   grid-auto-flow: column
@@ -28,9 +26,7 @@
   margin: 2rem 0.5rem 2rem 0.5rem 
   background-color: #d7d7d8
   box-shadow: 12px 12px 20px #4b4b52
-
-  /* border-radius: 1rem */
-  /* box-shadow: -2px 2px 20px #000 */
+  box-shadow: inset 5px 5px 15px  #4b4b52
 
 .element-projet
   display: flex
@@ -62,7 +58,7 @@ figure
   display: flex
   flex-direction: column
   
-img
+.btn img
   width: 100%
   object-fit: cover
   border-radius: 1rem 1rem 0 0
@@ -97,7 +93,7 @@ img
   background: #f2f2f2
   box-shadow: 5px 5px 20px #5e5e65
 
-
+/* Bouton fermer */
 .close
   margin-top: 1rem
   margin-left: 1rem
@@ -107,6 +103,7 @@ img
     color: $color-secondary
     &:hover
       color: #000
+
 
 /* Texte */
 .text-pop
@@ -123,30 +120,51 @@ img
     line-height: 2rem
   .p-pop
     display: flex
+    margin-top: 1rem
     p
       text-align: justify
       padding-top: 5% 
-      padding-bottom: 5%
-      
+      padding-bottom: 5% 
+  
+
+/* Icons techno */
 .tech-pop
   margin-top: 1rem
 .logo-tech
-  display: flex
-  margin-top: 2rem
+  display: inline-block
   justify-content: space-evenly
 .logo-tech img
-  width: 50px
-figure
-  margin-top: auto
-figcaption
-  text-align: center
+  width: 40px
+  margin-right: 1rem
+  margin-top: 1rem
+
+
+/* Bouton lien code */
+.liens-code
+  margin: 1rem 0 1rem 0
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+.code
+  padding: 0.8rem
+  margin-top: 1rem
+  border-radius: 1.8rem
+  color: #fff
+  font-family: "Neon Tubes 2"
+  font-size: 0.8rem
+  background-color: $color-secondary
+  box-shadow: 5px 5px 10px #737378
+  &:hover
+    color: #000
   
+
 /* Demo-Video */
 .video-pop
   display: flex
   justify-content: center
   padding: 2rem
-  background: #ebebeb
+  background: #d7d7d8
   border-radius: 0 0 1rem 1rem 
   video
     margin-top: auto 
@@ -156,8 +174,11 @@ figcaption
     border: 5px solid #fff
     @include box-shadow
 
-/* RESPONSIVE tablette / desktop */
 
+/* RESPONSIVE tablette / desktop */
+@media screen and (min-width: 403px)
+  .liens-code
+    justify-content: space-between
 @media screen and (min-width: 426px)
   .bloc-projet
     display: flex
@@ -171,6 +192,9 @@ figcaption
     right: -30%
     left: -30%
     bottom: -20%
+  .liens-code
+    justify-content: space-evenly
+  
 
 @media screen and (min-width: 769px)
   #projets

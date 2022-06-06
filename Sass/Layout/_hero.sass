@@ -3,7 +3,7 @@
 #hero
   background-color: $color-primary
   top: 0
-  padding: 5rem 3rem 5rem 3rem
+  padding: 5rem 1rem 5rem 1rem
 
 .titles
   margin-top: 5rem
@@ -11,16 +11,19 @@
 
 .title-l
   display: flex
-  padding: 1rem 0
+  padding: 1rem
   .laeti
     margin: auto
     @include neon-shadow
     font-size: 300%
     letter-spacing: 5px
-  
+
+.title-d
+  padding: auto
 .title-d, .title-dev, .title-w
   display: flex
   .duche
+    letter-spacing: 5px
     font-size: 300%
     margin: auto
     @include neon-shadow
@@ -34,6 +37,7 @@
     @include neon-shadow
     letter-spacing: 3px
     margin: auto
+    font-size: 100%
 .title-dev
   padding: 1rem 0
 
@@ -47,6 +51,11 @@
 
 
 @media screen and (min-width: 620px)
+  .names
+    display: flex
+    justify-content: center
+    .laeti
+      margin-right: 2rem
   .title-dw
     display: flex
     justify-content: center
