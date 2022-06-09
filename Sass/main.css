@@ -18,6 +18,7 @@ body {
   font-family: 'arial';
 }
 
+/* f845c5 - 37373f*/
 /* Animation neon */
 @-webkit-keyframes blink1 {
   0% {
@@ -312,7 +313,7 @@ body {
     display: none;
   }
   .btn-menu {
-    background-color: #37373f;
+    background-color: #2c2c32;
     height: 4rem;
     width: 4rem;
     position: fixed;
@@ -323,10 +324,8 @@ body {
     text-align: center;
     cursor: pointer;
     font-family: "Neon Tubes 2";
-    color: #ffd9e2;
-    text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
-    -webkit-box-shadow: #ffd9e2 0px 0px 4px 0px , #ffd9e2 0px 0px 1px 0px;
-            box-shadow: #ffd9e2 0px 0px 4px 0px , #ffd9e2 0px 0px 1px 0px;
+    -webkit-box-shadow: 5px 5px 20px  #000;
+            box-shadow: 5px 5px 20px  #000;
   }
   .bi-caret-left-fill {
     color: #f845c5;
@@ -335,16 +334,18 @@ body {
     right: 5rem;
   }
   .logo {
-    font-family: "Neon Tubes 2";
-    color: #ffd9e2;
-    text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
+    color: #f845c5;
     position: relative;
     display: inline-block;
     margin-top: 1rem;
     font-size: 1.5rem;
+    text-shadow: 2px 2px 2px #000;
   }
   .logo:hover {
-    color: #f845c5;
+    font-family: "Neon Tubes 2";
+    color: #fff;
+    text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
+    /* ffd9e2 */
   }
   .nav {
     width: 10rem;
@@ -365,25 +366,26 @@ body {
     left: 2rem;
     top: 1rem;
     text-align: center;
-    background-color: #37373f;
+    background-color: #2c2c32;
     border-radius: 20px;
     padding: 1rem;
-    -webkit-box-shadow: #ffd9e2 0px 0px 4px 0px , #ffd9e2 0px 0px 1px 0px;
-            box-shadow: #ffd9e2 0px 0px 4px 0px , #ffd9e2 0px 0px 1px 0px;
+    -webkit-box-shadow: 5px 5px 20px  #000;
+            box-shadow: 5px 5px 20px  #000;
   }
   .liens {
     font-family: "Neon Tubes 2";
-    color: #ffd9e2;
-    text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
     color: #f845c5;
     display: inline-block;
     font-size: 1rem;
-    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #000;
     margin: 0.5rem;
     padding: 0.5rem;
   }
   .liens:hover {
-    color: #f845c5;
+    font-family: "Neon Tubes 2";
+    color: #fff;
+    text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
+    /* ffd9e2 */
   }
   .nav-check:checked ~ .nav {
     -webkit-transform: scale(1, 1);
@@ -400,15 +402,14 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #37373f;
+    background-color: #2c2c32;
     position: fixed;
     width: 100%;
     z-index: 1;
   }
   .logo-large {
     font-family: "Neon Tubes 2";
-    color: #ffd9e2;
-    text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
+    color: #f845c5;
     padding: 1rem 1.3rem;
     font-size: 1.5rem;
   }
@@ -422,28 +423,27 @@ body {
     padding: 1.3rem 1rem;
   }
   .liens-large {
+    color: #f845c5;
     font-family: "Neon Tubes 2";
-    color: #ffd9e2;
-    text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
     font-size: 1rem;
-    text-transform: uppercase;
     padding: 1rem;
+    text-shadow: 2px 2px 2px #000;
   }
   .liens-large:hover {
-    color: #f845c5;
+    font-family: "Neon Tubes 2";
+    color: #fff;
+    text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
+    /* ffd9e2 */
   }
 }
 
 /* ONE PAGE */
 .projets-title, .propos-title, .contact-title {
   font-family: "Neon Tubes 2";
-  color: #ffd9e2;
+  color: #fff;
   text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
+  /* ffd9e2 */
   text-align: center;
-}
-
-p {
-  font-size: 1.2rem;
 }
 
 a:focus {
@@ -454,7 +454,7 @@ a:focus {
 
 /* SECTION HERO */
 #hero {
-  background-color: #37373f;
+  background-color: #2c2c32;
   top: 0;
   padding: 5rem 1rem 5rem 1rem;
 }
@@ -474,8 +474,9 @@ a:focus {
 .title-l .laeti {
   margin: auto;
   font-family: "Neon Tubes 2";
-  color: #ffd9e2;
+  color: #fff;
   text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
+  /* ffd9e2 */
   font-size: 300%;
   letter-spacing: 5px;
 }
@@ -495,8 +496,9 @@ a:focus {
   font-size: 300%;
   margin: auto;
   font-family: "Neon Tubes 2";
-  color: #ffd9e2;
+  color: #fff;
   text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
+  /* ffd9e2 */
 }
 
 .title-dev {
@@ -511,8 +513,9 @@ a:focus {
 
 .title-dw .dev, .title-dw .web {
   font-family: "Neon Tubes 2";
-  color: #ffd9e2;
+  color: #fff;
   text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
+  /* ffd9e2 */
   letter-spacing: 3px;
   margin: auto;
   font-size: 100%;
@@ -585,19 +588,30 @@ a:focus {
 }
 
 /* CAROUSEL */
+.bloc-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.bloc-carousel .bi-chevron-compact-left, .bloc-carousel .bi-chevron-compact-right {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f845c5;
+  text-shadow: 2px 2px 2px #000;
+}
+
 .carousel {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
   overflow-x: auto;
   grid-auto-columns: 100%;
-  padding: 2rem 1rem 2rem 1rem;
-  margin: 2rem 0.5rem 2rem 0.5rem;
-  background-color: #d7d7d8;
-  -webkit-box-shadow: 12px 12px 20px #4b4b52;
-          box-shadow: 12px 12px 20px #4b4b52;
-  -webkit-box-shadow: inset 5px 5px 15px  #4b4b52;
-          box-shadow: inset 5px 5px 15px  #4b4b52;
+  padding: 2rem 0 2rem 0.5rem;
 }
 
 .element-projet {
@@ -605,20 +619,24 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   border-radius: 1rem;
-  margin: 1rem 0.5rem 2rem 0.5rem;
-  -webkit-box-shadow: 12px 12px 20px #737378;
-          box-shadow: 12px 12px 20px #737378;
-  width: 90%;
+  margin-right: 2rem;
 }
 
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 5px 5px 20px  #000;
+          box-shadow: 5px 5px 20px  #000;
 }
 
-.overlay {
-  display: none;
+.container:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn {
@@ -626,16 +644,22 @@ a:focus {
   color: #000;
 }
 
-.btn .titre-projet {
+.titre-projet {
+  display: block;
   text-align: center;
   background: #fff;
   padding-top: 0.5rem;
   border-radius: 0 0 1rem 1rem;
 }
 
-.btn .titre-projet p {
+.titre-projet h3 {
+  font-size: 1.2rem;
+}
+
+.titre-projet p {
   padding-bottom: 0.5rem;
   color: #000;
+  font-size: 1rem;
 }
 
 figure {
@@ -682,7 +706,7 @@ figure {
 .modal-window > div {
   position: absolute;
   border-radius: 1rem;
-  top: 70%;
+  top: 90%;
   left: 10%;
   right: 10%;
   background: #f2f2f2;
@@ -783,7 +807,12 @@ figure {
 }
 
 .code:hover {
-  color: #000;
+  color: #f845c5;
+  background-color: #fff;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 
 /* Demo-Video */
@@ -805,11 +834,17 @@ figure {
   width: 250px;
   border-radius: 1rem;
   border: 5px solid #fff;
-  -webkit-box-shadow: 5px 5px 20px  #737378;
-          box-shadow: 5px 5px 20px  #737378;
+  -webkit-box-shadow: 5px 5px 20px  #000;
+          box-shadow: 5px 5px 20px  #000;
 }
 
 /* RESPONSIVE tablette / desktop */
+@media screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 403px) {
   .liens-code {
     -webkit-box-pack: justify;
@@ -904,6 +939,7 @@ figure {
 
 .propos-p {
   padding: 2rem;
+  font-size: 1.2rem;
 }
 
 /* PORTRAIT */
@@ -920,13 +956,13 @@ figure {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: inset 12px 12px 20px #4b4b52;
-          box-shadow: inset 12px 12px 20px #4b4b52;
+  -webkit-box-shadow: inset 2px 2px 20px #000;
+          box-shadow: inset 2px 2px 20px #000;
 }
 
 .img-bio {
-  -webkit-box-shadow: 12px 12px 20px #4b4b52;
-          box-shadow: 12px 12px 20px #4b4b52;
+  -webkit-box-shadow: 5px 5px 20px  #000;
+          box-shadow: 5px 5px 20px  #000;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
@@ -941,7 +977,7 @@ figure {
         -ms-flex-align: center;
             align-items: center;
   }
-  .title h3 {
+  .title h2 {
     width: 100%;
   }
   .propos-p {
@@ -971,7 +1007,7 @@ figure {
 
 /* SECTION CONTACT */
 footer {
-  background-color: #37373f;
+  background-color: #2c2c32;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -1004,14 +1040,16 @@ footer {
 }
 
 .bi-envelope-fill, .bi-linkedin {
-  font-family: "Neon Tubes 2";
-  color: #ffd9e2;
-  text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
+  color: #f845c5;
   text-align: center;
   font-size: 2rem;
+  text-shadow: 2px 2px 2px #000;
 }
 
 .bi-envelope-fill:hover, .bi-linkedin:hover {
-  color: #f845c5;
+  font-family: "Neon Tubes 2";
+  color: #fff;
+  text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
+  /* ffd9e2 */
 }
 /*# sourceMappingURL=main.css.map */

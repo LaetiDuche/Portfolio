@@ -4,12 +4,13 @@
     display: none
   .nav-large
     display: flex
-    background-color: rgba(55, 55, 63, 1)
+    background-color: $color-primary
     position: fixed
     width: 100%
     z-index: 1
   .logo-large
-    @include neon-shadow
+    font-family: "Neon Tubes 2"
+    color: $color-secondary
     padding: 1rem 1.3rem
     font-size: 1.5rem
   .nav2
@@ -18,9 +19,11 @@
     display: flex
     padding: 1.3rem 1rem
   .liens-large
-    @include neon-shadow
+    color: $color-secondary
+    font-family: "Neon Tubes 2"
     font-size: 1rem
-    text-transform: uppercase
     padding: 1rem
+    text-shadow: 2px 2px 2px #000
     &:hover
-      color: $color-secondary
+      @include neon-shadow
+      

@@ -13,21 +13,23 @@
     z-index: 2000
     text-align: center
     cursor: pointer
-    @include neon-shadow
-    box-shadow:  #ffd9e2 0px 0px 4px 0px , #ffd9e2 0px 0px 1px 0px
+    font-family: "Neon Tubes 2"
+    @include box-shadow 
   .bi-caret-left-fill
     color: $color-secondary
     position: fixed
     top: 2.5rem
     right: 5rem
   .logo
-    @include neon-shadow
+    color: $color-secondary
     position: relative
     display: inline-block
     margin-top: 1rem
     font-size: 1.5rem
+    text-shadow: 2px 2px 2px #000
     &:hover
-      color: $color-secondary
+      @include neon-shadow
+      
   .nav
     width: 10rem
     position: fixed
@@ -44,16 +46,17 @@
     background-color: $color-primary
     border-radius: 20px
     padding: 1rem
-    box-shadow:  #ffd9e2 0px 0px 4px 0px , #ffd9e2 0px 0px 1px 0px
+    @include box-shadow 
   .liens
-    @include neon-shadow
+    font-family: "Neon Tubes 2"
     color: $color-secondary
     display: inline-block
     font-size: 1rem
-    text-transform: uppercase
+    text-shadow: 2px 2px 2px #000
     margin: 0.5rem
     padding: 0.5rem
     &:hover
-      color: $color-secondary
+      @include neon-shadow
+      
   .nav-check:checked ~ .nav
     transform: scale(1, 1)

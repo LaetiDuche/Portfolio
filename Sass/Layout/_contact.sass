@@ -20,9 +20,11 @@ footer
   justify-content: center
 
 .bi-envelope-fill, .bi-linkedin
-  @include neon-shadow
+  color: $color-secondary
   text-align: center
   font-size: 2rem
+  text-shadow: 2px 2px 2px #000
   &:hover
-    color: $color-secondary
+    @include neon-shadow
+    
   

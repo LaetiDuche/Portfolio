@@ -16,7 +16,7 @@
   line-height: 30px
 .propos-p
   padding: 2rem
-
+  font-size: 1.2rem
 
 /* PORTRAIT */
 .img
@@ -26,9 +26,9 @@
   background-color: #5e5e65
   justify-content: center
   align-items: center
-  box-shadow: inset 12px 12px 20px #4b4b52
+  box-shadow: inset 2px 2px 20px #000
 .img-bio
-  box-shadow: 12px 12px 20px #4b4b52
+  @include box-shadow
   object-fit: cover
   border-radius: 50%
   width: 250px
@@ -39,7 +39,7 @@
 @media screen and (min-width: 426px)
   #apropos
     align-items: center 
-  .title h3
+  .title h2
     width: 100%
   .propos-p
     padding: 4rem

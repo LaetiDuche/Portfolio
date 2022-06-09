@@ -17,42 +17,56 @@
 
   
 /* CAROUSEL */
+.bloc-carousel
+  display: flex
+  margin-top: 1rem
+  margin-bottom: 2rem
+  .bi-chevron-compact-left, .bi-chevron-compact-right
+    margin-top: auto
+    margin-bottom: auto
+    font-size: 2rem
+    font-weight: bold
+    color: $color-secondary
+    text-shadow: 2px 2px 2px #000
+
 .carousel
   display: grid
   grid-auto-flow: column
   overflow-x: auto
   grid-auto-columns: 100%
-  padding: 2rem 1rem 2rem 1rem
-  margin: 2rem 0.5rem 2rem 0.5rem 
-  background-color: #d7d7d8
-  box-shadow: 12px 12px 20px #4b4b52
-  box-shadow: inset 5px 5px 15px  #4b4b52
+  padding: 2rem 0 2rem 0.5rem
 
 .element-projet
   display: flex
   border-radius: 1rem
-  margin: 1rem 0.5rem 2rem 0.5rem
-  box-shadow: 12px 12px 20px #737378
-  width: 90%
+  margin-right: 2rem 
+  
   
 .container
   display: flex
-  
-.overlay
-  display: none
+  border-radius: 1rem
+  margin-bottom: 1rem
+  @include box-shadow
+  &:hover
+    transform: scale(1.08) 
+    transition: all 0.2s ease-in-out
 
 .btn
   text-decoration: none
   color: #000
-  
-  .titre-projet
-    text-align: center
-    background: #fff
-    padding-top: 0.5rem 
-    border-radius: 0 0 1rem 1rem
-    p
-      padding-bottom: 0.5rem
-      color: #000
+
+.titre-projet
+  display: block
+  text-align: center
+  background: #fff
+  padding-top: 0.5rem 
+  border-radius: 0 0 1rem 1rem
+  h3
+    font-size: 1.2rem
+  p
+    padding-bottom: 0.5rem
+    color: #000
+    font-size: 1rem
 
 figure
   display: flex
@@ -87,7 +101,7 @@ figure
 .modal-window > div
   position: absolute
   border-radius: 1rem
-  top: 70%
+  top: 90%
   left: 10%
   right: 10%
   background: #f2f2f2
@@ -156,7 +170,10 @@ figure
   background-color: $color-secondary
   box-shadow: 5px 5px 10px #737378
   &:hover
-    color: #000
+    color: $color-secondary
+    background-color: #fff
+    transform: scale(1.08) 
+    transition: all ease-in-out 0.2s
   
 
 /* Demo-Video */
@@ -176,6 +193,9 @@ figure
 
 
 /* RESPONSIVE tablette / desktop */
+@media screen and (max-width: 320px)
+  .container
+    width: 100%
 @media screen and (min-width: 403px)
   .liens-code
     justify-content: space-between
