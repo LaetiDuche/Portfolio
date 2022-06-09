@@ -18,6 +18,11 @@ body {
   font-family: 'arial';
 }
 
+@font-face {
+  font-family: 'arial', 'NeonTubes2';
+  src: url("./css/NeonTubes2.otf");
+}
+
 /* f845c5 - 37373f*/
 /* Animation neon */
 @-webkit-keyframes blink1 {
@@ -773,7 +778,6 @@ figure {
 }
 
 .logo-tech img {
-  width: 40px;
   margin-right: 1rem;
   margin-top: 1rem;
 }
