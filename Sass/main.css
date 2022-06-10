@@ -18,6 +18,11 @@ body {
   font-family: 'arial';
 }
 
+@font-face {
+  font-family: 'arial', 'NeonTubes2';
+  src: url("./css/NeonTubes2.otf");
+}
+
 /* f845c5 - 37373f*/
 /* Animation neon */
 @-webkit-keyframes blink1 {
@@ -579,7 +584,7 @@ a:focus {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
-  line-height: 30px;
+  line-height: 35px;
   font-size: 1.2rem;
 }
 
@@ -752,6 +757,7 @@ figure {
   display: -ms-flexbox;
   display: flex;
   margin-top: 1rem;
+  line-height: 23px;
 }
 
 .text-pop .p-pop p {
@@ -773,7 +779,6 @@ figure {
 }
 
 .logo-tech img {
-  width: 40px;
   margin-right: 1rem;
   margin-top: 1rem;
 }
@@ -934,7 +939,7 @@ figure {
       -ms-flex-pack: center;
           justify-content: center;
   color: #000;
-  line-height: 30px;
+  line-height: 35px;
 }
 
 .propos-p {
