@@ -584,7 +584,7 @@ a:focus {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
-  line-height: 30px;
+  line-height: 35px;
   font-size: 1.2rem;
 }
 
@@ -757,6 +757,7 @@ figure {
   display: -ms-flexbox;
   display: flex;
   margin-top: 1rem;
+  line-height: 23px;
 }
 
 .text-pop .p-pop p {
@@ -938,7 +939,7 @@ figure {
       -ms-flex-pack: center;
           justify-content: center;
   color: #000;
-  line-height: 30px;
+  line-height: 35px;
 }
 
 .propos-p {
