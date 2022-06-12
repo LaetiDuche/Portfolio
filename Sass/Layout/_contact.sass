@@ -1,30 +1,46 @@
 /* SECTION CONTACT */
   
 footer
-  background-color: $color-primary
+  background-color: #161619
   padding-top: 3rem
   padding-bottom: 3rem
+  z-index: 10
+  box-shadow: rgba(0, 0, 0, 0.15) 2.6px 1.95px 1.95px 
 .bloc-contact
   display: flex
   padding: 2rem 1rem 1rem 1rem
   margin-top: 2rem
-.contact, .social
+.contact, .bloc-social
   width: 100%
 .p-contact
   color: #fff
   margin-bottom: 2rem
   text-align: center
+  font-size: 1.2rem
 
-.mailto, .linkedin
+.social
+  display: flex
+  justify-content: space-evenly
+.mailto, .linkedin, .github
+  color: $color-secondary
+  font-size: 2rem
+  font-weight: bold
+  &:hover
+    @include contact-shadow
+
+.btn
   display: flex
   justify-content: center
-
-.bi-envelope-fill, .bi-linkedin
-  color: $color-secondary
-  text-align: center
-  font-size: 2rem
-  text-shadow: 2px 2px 2px #000
-  &:hover
-    @include neon-shadow
-    
+.btn-social
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 1rem
+  border-radius: 50% 
+  width: 60px
+  height: 60px
+  border: none
+  @include btn-3d
+  cursor: pointer
+  
   

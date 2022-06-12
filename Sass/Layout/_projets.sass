@@ -4,6 +4,7 @@
   background-color: #4b4b52
   padding-top: 3rem
   padding-bottom: 3rem
+  box-shadow: inset 2px 2px 20px #000
 
 .p-projet
   display: flex
@@ -35,12 +36,12 @@
   overflow-x: auto
   grid-auto-columns: 100%
   padding: 2rem 0 2rem 0.5rem
+  z-index: 0
 
 .element-projet
   display: flex
   border-radius: 1rem
   margin-right: 2rem 
-  
   
 .container
   display: flex
@@ -92,6 +93,7 @@ figure
   pointer-events: none
   transition: all 0.3s
   border-radius: 1rem
+  z-index: 999
   
 .modal-window:target
   visibility: visible
@@ -154,27 +156,44 @@ figure
 
 
 /* Bouton lien code */
+
 .liens-code
-  margin: 1rem 0 1rem 0
   display: flex
-  flex-wrap: wrap
-  justify-content: center
-  align-items: center
-.code
-  padding: 0.8rem
-  margin-top: 1rem
-  border-radius: 1.8rem
-  color: #fff
+  justify-content: space-around
+
+.btn-code
+  display: flex
+  width: 50px
+  height: 50px
+  margin: 1rem 5px
+  overflow: hidden
+  background: $color-secondary
+  border-radius: 50px
+  cursor: pointer
+  box-shadow: 1px 1px 5px #310d27, -1px -1px 5px #fff , inset 1px 1px 5px #fcb4e7, inset -1px -1px 5px #310d27
+  border: none
   font-family: "Neon Tubes 2"
-  font-size: 0.8rem
-  background-color: $color-secondary
-  box-shadow: 5px 5px 10px #737378
+  transition: all 0.3s ease-out
+  &:active
+    box-shadow: 1px 1px 5px #feecf9, -1px -1px 5px #310d27, inset 1px 1px 5px #fcb4e7, inset -1px -1px 5px #feecf9
+    color: #fff
+    @include text-shadow
   &:hover
-    color: $color-secondary
-    background-color: #fff
-    transform: scale(1.08) 
-    transition: all ease-in-out 0.2s
-  
+    width: 160px
+  .icon
+    float: left
+    margin-left: 15px
+    border-radius: 50px
+    color: #fff
+    i
+      font-size: 1.4rem
+      line-height: 48px
+  span
+    font-size: 0.9rem
+    color: #fff
+    line-height: 50px
+    margin-left: 0.7rem
+    text-align: center
 
 /* Demo-Video */
 .video-pop
@@ -196,9 +215,8 @@ figure
 @media screen and (max-width: 320px)
   .container
     width: 100%
-@media screen and (min-width: 403px)
   .liens-code
-    justify-content: space-between
+    display: inline
 @media screen and (min-width: 426px)
   .bloc-projet
     display: flex
@@ -215,7 +233,6 @@ figure
   .liens-code
     justify-content: space-evenly
   
-
 @media screen and (min-width: 769px)
   #projets
     padding-top: 0

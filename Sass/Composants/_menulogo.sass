@@ -14,21 +14,20 @@
     text-align: center
     cursor: pointer
     font-family: "Neon Tubes 2"
-    @include box-shadow 
+    @include btn-3d 
   .bi-caret-left-fill
     color: $color-secondary
     position: fixed
     top: 2.5rem
     right: 5rem
   .logo
-    color: $color-secondary
+    @include neon-shadow
     position: relative
     display: inline-block
     margin-top: 1rem
     font-size: 1.5rem
-    text-shadow: 2px 2px 2px #000
     &:hover
-      @include neon-shadow
+      color: $color-secondary
       
   .nav
     width: 10rem
@@ -38,7 +37,7 @@
     transform: scale(1, 0)
     transform-origin: top
     transition: transform 400ms ease-in-out
-    z-index: 1
+    z-index: 2000
   .nav-list
     left: 2rem
     top: 1rem
