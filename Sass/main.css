@@ -598,11 +598,9 @@ a:focus {
 
 /* SECTION PROJETS */
 #projets {
-  background-color: #4b4b52;
+  background-color: #37373f;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  -webkit-box-shadow: inset 2px 2px 20px #000;
-          box-shadow: inset 2px 2px 20px #000;
 }
 
 .p-projet {
@@ -851,12 +849,12 @@ figure {
 }
 
 .btn-code:hover {
-  width: 160px;
+  width: 155px;
 }
 
 .btn-code .icon {
   float: left;
-  margin-left: 15px;
+  padding-left: 13px;
   border-radius: 50px;
   color: #fff;
 }
@@ -866,12 +864,18 @@ figure {
   line-height: 48px;
 }
 
-.btn-code span {
-  font-size: 0.9rem;
+.btn-code .span-site {
+  font-size: 0.8rem;
+  color: #fff;
+  line-height: 50px;
+  margin-left: 0.8rem;
+}
+
+.btn-code .span-code {
+  font-size: 0.8rem;
   color: #fff;
   line-height: 50px;
   margin-left: 0.7rem;
-  text-align: center;
 }
 
 /* Demo-Video */
