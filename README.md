@@ -9,6 +9,3 @@ Objectifs :
 
 Techniques :  
 - Html, Css, Sass
-
-Démarrage :  
-- npm run sass

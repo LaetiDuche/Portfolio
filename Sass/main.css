@@ -15,12 +15,12 @@ li {
 }
 
 body {
-  font-family: 'arial';
+  font-family: 'arial', sans-serif;
 }
 
 @font-face {
-  font-family: 'arial', 'NeonTubes2';
-  src: url("./css/NeonTubes2.otf");
+  font-family: "neon-tubes-2" sans-serif;
+  src: url("https://blogfonts.com/fonts/n/456/164456/file/NeonTubes2.otf") format("woff"), url("https://blogfonts.com/fonts/n/456/164456/file/NeonTubes2.otf") format("opentype"), url("https://blogfonts.com/fonts/n/456/164456/file/NeonTubes2.otf") format("truetype");
 }
 
 /* f845c5 - 37373f*/
@@ -328,7 +328,7 @@ body {
     z-index: 2000;
     text-align: center;
     cursor: pointer;
-    font-family: "Neon Tubes 2";
+    font-family: 'neon-tubes-2', sans-serif;
     background: #161619;
     -webkit-box-shadow: 1px 1px 5px #000, -1px -1px 5px #6f6f6f, inset 1px 1px 5px #2b2b2b, inset -1px -1px 5px #000;
             box-shadow: 1px 1px 5px #000, -1px -1px 5px #6f6f6f, inset 1px 1px 5px #2b2b2b, inset -1px -1px 5px #000;
@@ -478,14 +478,15 @@ a:focus {
   background-image: url("../images/bg-black.jpg");
   background-size: cover;
   top: 0;
-  padding: 5.5rem 1rem 5.5rem 1rem;
+  padding: 5.5rem 1rem 7rem 1rem;
+  height: 100vh;
   -webkit-box-shadow: #26394d 0px 20px 30px -10px;
           box-shadow: #26394d 0px 20px 30px -10px;
 }
 
 .titles {
   margin-top: 5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .title-l {
@@ -533,6 +534,7 @@ a:focus {
 .title-dw {
   font-size: 1.5rem;
   margin-top: 5rem;
+  margin-bottom: 6rem;
 }
 
 .title-dw .dev, .title-dw .web {
@@ -563,6 +565,65 @@ a:focus {
 .web {
   -webkit-animation: blink2 2700ms linear;
           animation: blink2 2700ms linear;
+}
+
+/* Bouton contact */
+.lien-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 5rem;
+}
+
+.btn-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Neon Tubes 2";
+  color: #f845c5;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 30px;
+  border: none;
+  background: #161619;
+  -webkit-box-shadow: 1px 1px 5px #000, -1px -1px 5px #6f6f6f, inset 1px 1px 5px #2b2b2b, inset -1px -1px 5px #000;
+          box-shadow: 1px 1px 5px #000, -1px -1px 5px #6f6f6f, inset 1px 1px 5px #2b2b2b, inset -1px -1px 5px #000;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.btn-contact:active {
+  -webkit-box-shadow: 1px 1px 5px #5b5b5b, -1px -1px 5px #000, inset 1px 1px 5px #2b2b2b, inset -1px -1px 5px #e5dfdf;
+          box-shadow: 1px 1px 5px #5b5b5b, -1px -1px 5px #000, inset 1px 1px 5px #2b2b2b, inset -1px -1px 5px #e5dfdf;
+  color: #fff;
+  text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
+}
+
+.btn-contact:active {
+  -webkit-box-shadow: 1px 1px 5px #feecf9, -1px -1px 5px #310d27, inset 1px 1px 5px #fcb4e7, inset -1px -1px 5px #feecf9;
+          box-shadow: 1px 1px 5px #feecf9, -1px -1px 5px #310d27, inset 1px 1px 5px #fcb4e7, inset -1px -1px 5px #feecf9;
+  color: #fff;
+  text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
+}
+
+.btn-contact:hover {
+  color: #fff;
+  text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 @media screen and (min-width: 620px) {
@@ -598,7 +659,8 @@ a:focus {
 
 /* SECTION PROJETS */
 #projets {
-  background-color: #37373f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0f0f0f), to(rgba(20, 20, 20, 0.7)));
+  background: linear-gradient(to bottom, #0f0f0f, rgba(20, 20, 20, 0.7));
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -976,14 +1038,15 @@ figure {
 
 /* SECTION A PROPOS */
 #apropos {
-  background-color: #ebebeb;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, 0.7)), to(rgba(20, 20, 20, 0.4)));
+  background: linear-gradient(to bottom, rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.4));
+  padding-bottom: 5rem;
 }
 
 /* TEXTE */
 .propos-title {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #5e5e65;
 }
 
 .p-bio {
@@ -998,6 +1061,7 @@ figure {
 .propos-p {
   padding: 2rem;
   font-size: 1.2rem;
+  background-color: #e7e7e8;
 }
 
 /* PORTRAIT */
@@ -1007,7 +1071,6 @@ figure {
   display: flex;
   text-align: center;
   padding: 4rem 2rem;
-  background-color: #5e5e65;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1063,7 +1126,7 @@ figure {
 
 /* SECTION CONTACT */
 footer {
-  background-color: #161619;
+  background-color: #0f0f0f;
   padding-top: 3rem;
   padding-bottom: 3rem;
   z-index: 10;
