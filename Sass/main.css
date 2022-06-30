@@ -16,7 +16,7 @@ li {
 
 @font-face {
   font-family: 'neon tubes 2';
-  src: url("https://blogfonts.com/fonts/n/456/164456/file/NeonTubes2.otf") format("woff"), url("https://blogfonts.com/fonts/n/456/164456/file/NeonTubes2.otf") format("opentype"), url("https://blogfonts.com/fonts/n/456/164456/file/NeonTubes2.otf") format("truetype");
+  src: url("../css/NeonTubes2.otf") format("otf");
 }
 
 body {
