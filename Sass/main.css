@@ -508,10 +508,6 @@ a:focus {
   letter-spacing: 5px;
 }
 
-.title-d {
-  padding: auto;
-}
-
 .title-d, .title-dev, .title-w {
   display: -webkit-box;
   display: -ms-flexbox;
