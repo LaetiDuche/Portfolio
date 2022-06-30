@@ -16,7 +16,7 @@ li {
 
 @font-face {
   font-family: 'neon_tubes_2regular';
-  src: url("neontubes2.woff2") format("woff2"), url("neontubes2.woff") format("woff");
+  src: url("./Base/neontubes2.woff2") format("woff2"), url("./Base/neontubes2.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
