@@ -2,16 +2,17 @@
 
 #projets
   background: linear-gradient(to bottom, rgba(15,15,15,1), rgba(20,20,20,0.7))
-  padding-top: 3rem
-  padding-bottom: 3rem
+  padding-top: 6rem
+  padding-bottom: 6rem
+  box-shadow: rgba(15,15,15,0.2) 0px 20px 30px -10px
 
 .p-projet
   display: flex
-  padding: 2rem 
   justify-content: center
   color: #fff
   line-height: 35px
   font-size: 1.2rem
+  padding: 2rem 
   p
     text-align: justify
 
@@ -20,35 +21,27 @@
 .bloc-carousel
   display: flex
   margin-top: 1rem
-  margin-bottom: 2rem
-  .bi-chevron-compact-left, .bi-chevron-compact-right
-    margin-top: auto
-    margin-bottom: auto
-    font-size: 2rem
-    font-weight: bold
-    color: $color-secondary
-    text-shadow: 2px 2px 2px #000
 
 .carousel
   display: grid
   grid-auto-flow: column
   overflow-x: auto
   grid-auto-columns: 100%
-  padding: 2rem 0 2rem 0.5rem
+  grid-gap: 1em
+  padding: 2rem 
   z-index: 0
 
 .element-projet
   display: flex
   border-radius: 1rem
-  margin-right: 2rem 
-  
+ 
 .container
   display: flex
   border-radius: 1rem
   margin-bottom: 1rem
   @include box-shadow
   &:hover
-    transform: scale(1.08) 
+    transform: scale(1.06) 
     transition: all 0.2s ease-in-out
 
 .btn
@@ -83,10 +76,10 @@ figure
 /* Fenetre */
 .modal-window
   display: flex
-  top: -20%
+  position: absolute
+  top: 100%
   right: 0
   left: 0
-  bottom: -20%
   visibility: hidden
   opacity: 0
   pointer-events: none
@@ -130,9 +123,9 @@ figure
     text-align: center
     color: $color-secondary
     font-family: "neon_tubes_2regular"
-    font-size: 1.2rem
+    font-size: 1.5rem
     margin: 1rem 0 0 0
-    line-height: 2rem
+    line-height: 2.5rem
   .p-pop
     display: flex
     margin-top: 1rem
@@ -187,16 +180,11 @@ figure
     i
       font-size: 1.4rem
       line-height: 48px
-  .span-site
+  .span-site, .span-code
     font-size: 0.8rem
     color: #fff
     line-height: 50px
-    margin-left: 0.8rem
-  .span-code
-    font-size: 0.8rem
-    color: #fff
-    line-height: 50px
-    margin-left: 0.7rem
+    margin-left: 0.9rem
 
 /* Demo-Video */
 .video-pop
@@ -221,28 +209,29 @@ figure
   .liens-code
     display: inline
 @media screen and (min-width: 426px)
-  .bloc-projet
-    display: flex
-  .projets-title
-    margin: auto 
-    width: 150%
+  #projets
+    padding-left: 3rem
+    padding-right: 3rem
+  .p-projet
+    padding: 2rem 0
   .carousel
-    grid-auto-columns: 60%
-  .modal-window
-    top: -20%
-    right: -30%
-    left: -30%
-    bottom: -20%
+    overflow-x: unset
+    grid-auto-flow: unset
+    grid-template-columns: repeat(2, 1fr)
+    padding: 0rem
   .liens-code
     justify-content: space-evenly
   
 @media screen and (min-width: 769px)
   #projets
-    padding-top: 0
+    padding-left: 4rem
+    padding-right: 4rem
+  
   .carousel
-    grid-auto-columns: 30%
-  .p-projet
-    padding: 4rem
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 1em
+  .container
+    margin: 0
   .modal-window > div
     display: flex
   .text-pop
@@ -251,13 +240,21 @@ figure
     border-radius: 0 1rem 1rem 0
     
 @media screen and (min-width: 1025px)
+  #projets
+    padding-left: 10rem
+    padding-right: 10rem
   .carousel
     grid-auto-columns: 30%
   .p-projet
-    margin-left: 2.5rem
-    margin-right: 2.5rem
+    padding: 4rem 0rem
   .video-pop 
     padding-right: 5rem
     padding-left: 5rem
 
-  
+@media screen and (min-width: 1441px) 
+  #projets
+    padding-left: 20rem
+    padding-right: 20rem
+  .carousel
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 2em
