@@ -531,7 +531,7 @@ a:focus {
   color: #fff;
   text-shadow: 0 0 0 transparent, 0 0 10px #f845c5, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #f845c5, 0 0 100px #f845c5, 0 0 90px #f845c5, 0 0 100px #f845c5, 0 0 300px #f845c5;
   /* ffd9e2 */
-  font-size: 300%;
+  font-size: 3rem;
   letter-spacing: 5px;
 }
 
@@ -543,7 +543,7 @@ a:focus {
 
 .title-d .duche, .title-dev .duche, .title-w .duche {
   letter-spacing: 5px;
-  font-size: 300%;
+  font-size: 3rem;
   margin: auto;
   font-family: 'neon_tubes_2regular';
   color: #fff;
@@ -569,7 +569,7 @@ a:focus {
   /* ffd9e2 */
   letter-spacing: 3px;
   margin: auto;
-  font-size: 100%;
+  font-size: 1.5rem;
 }
 
 .title-dev {
